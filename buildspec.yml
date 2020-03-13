@@ -15,7 +15,7 @@ phases:
       - "echo Build completed on `date`"
       - "echo Pushing the Docker image..."
       - "docker push dbaxy770928/node-server:latest"
-       - printf '[{"name":"node-server","imageUri":"dbaxy770928/node-server:latest"}]'  > imagedefinitions.json
+      - "printf '[{"name":"node-server","imageUri":"dbaxy770928/node-server:latest"}]'  > imagedefinitions.json"
 artifacts:
     files: imagedefinitions.json
 version: 0.2
